@@ -10,3 +10,9 @@
 
 - **1.3. React via CDN Link**  
   Using React and ReactDOM through CDN links to build components and render them to the DOM.
+
+- **1.4. React createElement**
+  Creating React elements using React.createElement(tag, attributes, children)
+
+- **1.5.  React createRoot and .render**
+  Rendering React elements to the DOM using ReactDOM.createRoot and .render
