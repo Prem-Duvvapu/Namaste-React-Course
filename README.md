@@ -16,3 +16,24 @@
 
 - **1.5.  React createRoot and .render**
   Rendering React elements to the DOM using ReactDOM.createRoot and .render
+
+## 2. Igniting our App
+
+- **2.1. npm**
+  npm doesn't stand for node package manager. there is not abbrevaition for it but it manages packages.
+
+- **2.2. package.json**
+  package.json is configuration for npm.
+
+- **2.3. webpack , parcel, vite**
+  Webpack, Parcel, and Vite are all JavaScript build tools that automate the process of converting code into browser-compatible JavaScript, optimize it, and bundle it into files for deployment.
+
+- **2.4. dependencies**
+  dev dependencies(-D) - dependencies required only in development
+  normal dependencies - required in dev and prod.
+
+- **2.5. tilde ( ~ ) and caret ( ^ ) in package.json**
+  Tilde allows only the patch version upgrades avoiding the minor updates while caret allows updates to patch as well as minor versions.
+
+- **2.6. package-lock.json**
+  The package-lock.json file provides a snapshot of all the dependencies and sub-dependencies with their exact versions. It locks the versions of dependencies for consistent project setup across different environments.
