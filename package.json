@@ -1,0 +1,26 @@
+{
+  "name": "namaste-react-course",
+  "version": "1.0.0",
+  "description": "This is Namaste React Course by Akshay Saini",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prem-Duvvapu/Namaste-React-Course.git"
+  },
+  "keywords": [
+    "Namaste-React",
+    "Prem"
+  ],
+  "author": "Prem Duvvapu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prem-Duvvapu/Namaste-React-Course/issues"
+  },
+  "homepage": "https://github.com/Prem-Duvvapu/Namaste-React-Course#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
