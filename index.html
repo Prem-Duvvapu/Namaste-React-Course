@@ -23,9 +23,10 @@
     <!-- This will give error because reaact is not loaded yet -->
     <!-- <script src="./App.js"></script>  -->
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- This is not the preferred way to add react to the project. This will make network call to get node modules -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
-    <script src="./App.js"></script>
+    <script type="module" src="./App.js"></script>
 </body>
 </html>
