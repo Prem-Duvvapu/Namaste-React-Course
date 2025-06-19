@@ -21,5 +21,12 @@
   "homepage": "https://github.com/Prem-Duvvapu/Namaste-React-Course#readme",
   "devDependencies": {
     "parcel": "^2.15.2"
-  }
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browerslist": [
+    "last 2 versions"
+  ]
 }
