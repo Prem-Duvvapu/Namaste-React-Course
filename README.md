@@ -1,5 +1,7 @@
 # Namaste React Course
 
+
+
 ## 1. Inception
 
 - **1.1. Plain HTML**  
@@ -16,6 +18,8 @@
 
 - **1.5.  React createRoot and .render**
   Rendering React elements to the DOM using ReactDOM.createRoot and .render
+
+
 
 ## 2. Igniting our App
 
@@ -57,3 +61,18 @@
   - **2.8.13. Error Handling**: Shows user-friendly runtime or build errors as overlays directly in the browser.
   - **2.8.14. HTTPS Support**: Supports secure development environments via HTTPS with self-signed certificates.
   - **2.8.15. Tree Shaking**: Automatically removes unused code from the final build to reduce bundle size.
+
+
+
+## 3. Laying the foundation
+
+- **3.1. scripts in package.json**  
+  Defines commands like start and build to run and bundle the project using Parcel.
+
+- **3.2. JSX**  
+  A syntax extension for JavaScript that allows writing HTML-like code in React components.
+  Use CamelCase in JSX attributes.
+
+- **3.3. Babel**  
+  A JavaScript compiler that transpiles modern JS and JSX into browser-compatible code.
+
