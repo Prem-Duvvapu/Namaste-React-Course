@@ -72,7 +72,15 @@
 - **3.2. JSX**  
   A syntax extension for JavaScript that allows writing HTML-like code in React components.
   Use CamelCase in JSX attributes.
+  {} - We can use this to write js code in JSX.
+  JSX escapes to avoid XSS.
 
 - **3.3. Babel**  
   A JavaScript compiler that transpiles modern JS and JSX into browser-compatible code.
+
+- **3.4 Functional component**
+  A function that returns a JSX code.
+
+- **3.5 Cross-Site Scripting(XSS)**
+  It is a web security vulnerability that allows an attacker to inject malicious scripts(usually JS) into website and that scripts runs in someone else's browser.
 
