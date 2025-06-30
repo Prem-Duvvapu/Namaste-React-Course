@@ -84,3 +84,18 @@
 - **3.5 Cross-Site Scripting(XSS)**
   It is a web security vulnerability that allows an attacker to inject malicious scripts(usually JS) into website and that scripts runs in someone else's browser.
 
+## 4.  Talk is Cheap, Show Me the Code
+- **4.1 Build Food Delivery App**
+  1. First, do the planning. build the wireframe.
+  2. What components can app have?
+
+- **4.2 Props**
+  Sending Props to a Component is similar to sending to Arguments to a Function.
+  When we want to dynamically pass data to a Component we use props.
+
+- **4.3 Config Drive UI**
+  It refers to building UI components and layouts based on external configurations - often in the form of JSON or other structured data - rather than hardcoding them in the UI code.
+
+- **4.4 key**
+  1. The key prop is used to help React identify which items have changed, been added or removed when rendering lists of components.
+  2. It's not recommended to use index as a key.
