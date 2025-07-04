@@ -99,3 +99,12 @@
 - **4.4 key**
   1. The key prop is used to help React identify which items have changed, been added or removed when rendering lists of components.
   2. It's not recommended to use index as a key.
+
+
+## 5. Let's Get Hooked
+- **5.1 Folder Structure**
+  It isn't mandatory to have a folder structure. But it's good to have it.
+
+- **5.2 export**
+  1. default export
+  2. named export  and named import
