@@ -108,3 +108,13 @@
 - **5.2 export**
   1. default export
   2. named export  and named import
+
+- **5.3 React Hooks**
+  1. useState() - Super powerful variables in react
+  2. useEffect 
+  3. Whenever a state variable changes, react re-renders the component.
+
+- **5.4 Reconciliation Algorithm (React Fiber)**
+  1. Virtual DOM
+  2. diff algorithm
+  3. [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
