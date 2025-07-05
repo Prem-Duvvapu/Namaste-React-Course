@@ -6,7 +6,7 @@ const styleCard = {
 };
 
 const RestaurantCard = ({resData}) => {
-    console.log(resData);
+    // console.log(resData);
     const { resName, cuisine, rating, deliveryTime } = resData;
 
     return (
