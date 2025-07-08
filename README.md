@@ -118,3 +118,20 @@
   1. Virtual DOM
   2. diff algorithm
   3. [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
+
+## 6. Exploring the World
+- **6.1 Monolith**
+  1. single application containing all code
+
+- **6.2 Microservices**
+  1. single responsibility
+  2. separation of concerns
+  3. you can have different tech stack for different services
+
+- **6.3 Rendering approaches**
+  1. Page loads -> API call -> Render
+  2. Page loads -> Render -> API -> Render
+  In react, we'll always follow 2nd approach. This gives better UX.
+
+- **6.4 useEffect**
+  1. This is called after the component is rendered.
