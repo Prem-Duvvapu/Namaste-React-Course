@@ -1,6 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { resList  } from "../utils/mockData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Body = () => {
 
@@ -14,6 +14,17 @@ const Body = () => {
 
 
     // let listOfRestaurants = resList;
+
+    // useEffect(callback function, dependency array)
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        const data = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        const json = await data.json();
+        console.log(json);
+    }
 
     return (
         <div className="body">
