@@ -143,5 +143,5 @@
   Rendering based on a condition
 
 - **6.7 CORS policy**
-  [CORS Proxy](corsproxy.io)
+  [CORS Proxy](https://corsproxy.io/)
 
