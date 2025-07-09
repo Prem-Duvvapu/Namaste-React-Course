@@ -135,3 +135,13 @@
 
 - **6.4 useEffect**
   1. This is called after the component is rendered.
+
+- **6.5 Shimmer UI**
+  For better User Experience(UX)
+
+- **6.6 Conditional rendering**
+  Rendering based on a condition
+
+- **6.7 CORS policy**
+  [CORS Proxy](corsproxy.io)
+

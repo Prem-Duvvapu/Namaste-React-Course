@@ -1,11 +1,16 @@
 import RestaurantCard from "./RestaurantCard";
 import { resList  } from "../utils/mockData";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
 
     // local State variable - Super powerful variable
-    const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+    const [listOfRestaurants, setListOfRestaurants] = useState([]);
+    const [searchText, setSearchText] = useState("");
+
+    // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component).
+    console.log("Body rendered");
 
     // const arr = useState(resList);
     // console.log(arr.length);
@@ -24,15 +29,37 @@ const Body = () => {
         const data = await fetch("https://jsonplaceholder.typicode.com/posts/1");
         const json = await data.json();
         console.log(json);
+        // setListOfRestaurants(json.data);
+        setListOfRestaurants(resList);
+    }
+
+    // Conditional Rendering
+    if (listOfRestaurants.length === 0) {
+        return <Shimmer />;
     }
 
     return (
         <div className="body">
-            {/* <div className="search">
-                Search
-            </div> */}
+                <div className="filter">
+                    <div className="search">
+                    <input 
+                        type="text" 
+                        className="searchText" 
+                        value={searchText} 
+                        onChange={(e) => {
+                            setSearchText(e.target.value);
+                        }}/>
+                    <button onClick={() => {
+                        // filter the restaurant cards and update the ui
+                        // search Text
+                        console.log(searchText);
+                        const filteredList = resList.filter(
+                            (res) => res.resName.toLowerCase().includes(searchText.toLowerCase())
+                        );
+                        setListOfRestaurants(filteredList);
+                    }}>Search</button>
+                </div>
 
-            <div className="filter">
                 <button className="filter-btn" 
                 onClick={() => {
                     //Filter logic here
