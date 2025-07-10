@@ -135,6 +135,10 @@
 
 - **6.4 useEffect**
   1. This is called after the component is rendered.
+  2. If there is no dependency array, it will be called on every render.
+  3. If there is an empty dependency array, it will be called on initial render(only once).
+  4. If there is dependency in dependency array, everytime the dependency changes the useEffect will be called.
+  5. Always be called after initial render.
 
 - **6.5 Shimmer UI**
   For better User Experience(UX)
@@ -145,3 +149,15 @@
 - **6.7 CORS policy**
   [CORS Proxy](https://corsproxy.io/)
 
+## 7. Finding the Path
+- **7.1 router**
+  1. react-router-dom
+  2. createBrowserRouter
+  3. RouterProvider
+  4. useRouteError (hook)
+  5. Outlet
+  6. Link
+
+- **7.2 types of Routing in web apps**
+  1. Client Side Routing(React is single-page application because of this.)
+  2. Server Side Routing
