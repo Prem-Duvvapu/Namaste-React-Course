@@ -161,3 +161,14 @@
 - **7.2 types of Routing in web apps**
   1. Client Side Routing(React is single-page application because of this.)
   2. Server Side Routing
+
+- **7.3 dynamic routing**
+  1. /:param
+  2. useParams()
+  3. created server.js in root directory
+
+## 8. Let's Get Classy
+ - **8.1 Class based component**
+    1. render()
+    2. construtor(props)
+    3. NEVER UPDATE STATE VARIABLES DIRECTLY
