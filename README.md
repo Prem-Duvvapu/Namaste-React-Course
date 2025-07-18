@@ -172,3 +172,27 @@
     1. render()
     2. construtor(props)
     3. NEVER UPDATE STATE VARIABLES DIRECTLY
+    4. First constructor() is called, next render() is called
+    5. componentDidMount() - this is called after the component is mounted i.e. after constructor() and render() execution completed. This is why API calls are made in componetDidMount()
+
+  - **8.2  Mounting Lifecycle**
+    Updating DOM is expensive so react tries to batch the commit phase
+    1. Render phase
+      1.1. constructor()
+      1.2. render()
+    2. Commit phase
+      2.1. React updates DOM
+      2.2. componentDidMount()
+
+  - **8.3 Updating LifeCycle**
+    1. Render phase
+      1.1. render() [New props, setState(), forceUpdate()]
+    2. Commit phase
+      2.1 React updates DOM
+      2.2 componentDidUpdate()
+
+## 9. Optimizing our App
+ - **9.1 Custom Hooks**
+      1. create new file for each hook in utils.
+      2. Always start the name with "use".
+      3. Online/Offline custom Hook.
