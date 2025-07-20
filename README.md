@@ -196,3 +196,7 @@
       1. create new file for each hook in utils.
       2. Always start the name with "use".
       3. Online/Offline custom Hook.
+
+ - **9.2 Chunking**
+      1. Also known as code splitting/Dynamic bundling/lazy loading/ondemand loading/dynamic import.
+      2. lazy, Suspense
