@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromtedLabel} from "./RestaurantCard";
 import { resList  } from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -10,6 +10,7 @@ const Body = () => {
     // local State variable - Super powerful variable
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
     const [searchText, setSearchText] = useState("");
+    const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
     // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component).
     console.log("Body rendered");
@@ -93,7 +94,15 @@ const Body = () => {
                     // console.log(restaurant);
                     return (
                         <Link key={restaurant.id}  to={"/restaurants/" + restaurant.id}>
-                            <RestaurantCard resData={restaurant} />
+                            {/* if the restaurant is promoted then add a promoted label to it. */}
+
+                            {
+                                restaurant.promoted ? ( 
+                                    <RestaurantCardPromoted resData={restaurant} /> 
+                                ) : (
+                                    <RestaurantCard resData={restaurant} />
+                                )
+                            }
                         </Link>
                     );
                 })}
