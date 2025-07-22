@@ -215,3 +215,12 @@
   
   - **10.2 Tailwind css**
       1. install tailwind css
+      2. [Docs](https://tailwindcss.com/docs/installation/framework-guides/parcel)
+
+## 11. Data is the New Oil
+ - **11.1 Higher Order Component**
+    A component that takes a component, enhance it(add something on top of it) and return the component.
+
+ - **11.2 Layers**
+    1. UI layer - jsx code
+    2. Data layer - state, props, local variables

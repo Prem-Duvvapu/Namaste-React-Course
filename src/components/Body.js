@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromtedLabel} from "./RestaurantCard";
 import { resList  } from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -10,6 +10,7 @@ const Body = () => {
     // local State variable - Super powerful variable
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
     const [searchText, setSearchText] = useState("");
+    const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
     // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component).
     console.log("Body rendered");
@@ -53,16 +54,16 @@ const Body = () => {
 
     return (
         <div className="body">
-                <div className="filter">
-                    <div className="search">
+                <div className="filter flex">
+                    <div className="search m-4 p-4">
                     <input 
                         type="text" 
-                        className="searchText" 
+                        className="border border-solid border-black" 
                         value={searchText} 
                         onChange={(e) => {
                             setSearchText(e.target.value);
                         }}/>
-                    <button onClick={() => {
+                    <button className='px-4 py-2 bg-green-300 m-4 rounded-lg' onClick={() => {
                         // filter the restaurant cards and update the ui
                         // search Text
                         console.log(searchText);
@@ -73,25 +74,35 @@ const Body = () => {
                     }}>Search</button>
                 </div>
 
-                <button className="filter-btn" 
-                onClick={() => {
-                    //Filter logic here
-                    const filteredList = listOfRestaurants.filter(
-                        (res) => res.rating > 4
-                    );
-                    setListOfRestaurants(filteredList);
-                    console.log(filteredList);
-                }}>
-                    Top Rated Restaurants
-                </button>
+                <div className="search m-4 p-4 flex items-center">
+                    <button className="px-4 py-2 bg-gray-300 m-4 rounded-lg" 
+                    onClick={() => {
+                        //Filter logic here
+                        const filteredList = listOfRestaurants.filter(
+                            (res) => res.rating > 4
+                        );
+                        setListOfRestaurants(filteredList);
+                        console.log(filteredList);
+                    }}>
+                        Top Rated Restaurants
+                    </button>
+                </div>
             </div>
 
-            <div className="res-container">
+            <div className="flex flex-wrap">
                 {listOfRestaurants.map((restaurant) => {
                     // console.log(restaurant);
                     return (
                         <Link key={restaurant.id}  to={"/restaurants/" + restaurant.id}>
-                            <RestaurantCard resData={restaurant} />
+                            {/* if the restaurant is promoted then add a promoted label to it. */}
+
+                            {
+                                restaurant.promoted ? ( 
+                                    <RestaurantCardPromoted resData={restaurant} /> 
+                                ) : (
+                                    <RestaurantCard resData={restaurant} />
+                                )
+                            }
                         </Link>
                     );
                 })}
