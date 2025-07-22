@@ -200,3 +200,18 @@
  - **9.2 Chunking**
       1. Also known as code splitting/Dynamic bundling/lazy loading/ondemand loading/dynamic import.
       2. lazy, Suspense
+
+## 10. Jo Dikhta Hai, Vo Bikta Hai (Styling)
+ - **10.1 Different ways**
+      1. external css
+      2. Sass
+      3. Styled components
+      4. Tailwind (framework)
+      5. Bootstrap (framework)
+      6. material ui
+      7. chakra ui
+      8. Ant design
+      9. postcss
+  
+  - **10.2 Tailwind css**
+      1. install tailwind css
