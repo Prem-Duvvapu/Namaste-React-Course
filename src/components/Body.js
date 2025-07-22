@@ -53,16 +53,16 @@ const Body = () => {
 
     return (
         <div className="body">
-                <div className="filter">
-                    <div className="search">
+                <div className="filter flex">
+                    <div className="search m-4 p-4">
                     <input 
                         type="text" 
-                        className="searchText" 
+                        className="border border-solid border-black" 
                         value={searchText} 
                         onChange={(e) => {
                             setSearchText(e.target.value);
                         }}/>
-                    <button onClick={() => {
+                    <button className='px-4 py-2 bg-green-300 m-4 rounded-lg' onClick={() => {
                         // filter the restaurant cards and update the ui
                         // search Text
                         console.log(searchText);
@@ -73,20 +73,22 @@ const Body = () => {
                     }}>Search</button>
                 </div>
 
-                <button className="filter-btn" 
-                onClick={() => {
-                    //Filter logic here
-                    const filteredList = listOfRestaurants.filter(
-                        (res) => res.rating > 4
-                    );
-                    setListOfRestaurants(filteredList);
-                    console.log(filteredList);
-                }}>
-                    Top Rated Restaurants
-                </button>
+                <div className="search m-4 p-4 flex items-center">
+                    <button className="px-4 py-2 bg-gray-300 m-4 rounded-lg" 
+                    onClick={() => {
+                        //Filter logic here
+                        const filteredList = listOfRestaurants.filter(
+                            (res) => res.rating > 4
+                        );
+                        setListOfRestaurants(filteredList);
+                        console.log(filteredList);
+                    }}>
+                        Top Rated Restaurants
+                    </button>
+                </div>
             </div>
 
-            <div className="res-container">
+            <div className="flex flex-wrap">
                 {listOfRestaurants.map((restaurant) => {
                     // console.log(restaurant);
                     return (

@@ -215,3 +215,4 @@
   
   - **10.2 Tailwind css**
       1. install tailwind css
+      2. [Docs](https://tailwindcss.com/docs/installation/framework-guides/parcel)

@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+/*
 .header {
     display: flex;
     justify-content: space-between;
@@ -71,7 +74,7 @@
 
 .login {
     padding: 0 3px;
-    /* background-color: rgb(225, 209, 34); */
+    background-color: rgb(225, 209, 34); 
 }
 
 .filter {
@@ -81,4 +84,5 @@
 .user-card {
     padding: 10px;
     border: 1px solid black;
-}
+} 
+*/
