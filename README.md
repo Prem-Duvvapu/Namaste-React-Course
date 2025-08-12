@@ -224,3 +224,9 @@
  - **11.2 Layers**
     1. UI layer - jsx code
     2. Data layer - state, props, local variables
+    3. Accordion
+    4. Uncontrolled component - The component is controlling itself.
+    5. Controlled component - The component is being controlled(like parent).
+    6. [Lifting state up](https://react.dev/learn/sharing-state-between-components)
+    7. [Props drilling](https://react.dev/learn/passing-data-deeply-with-context)
+    8. React Context
