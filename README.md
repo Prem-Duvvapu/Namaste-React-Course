@@ -229,4 +229,11 @@
     5. Controlled component - The component is being controlled(like parent).
     6. [Lifting state up](https://react.dev/learn/sharing-state-between-components)
     7. [Props drilling](https://react.dev/learn/passing-data-deeply-with-context)
-    8. React Context
+    8. React Context - createContext, useContext, UserContext.Provider, UserContext.Consumer(in class based components)
+
+## 12. Let's Build Our Store
+  - Redux is not Mandatory
+  - zustand
+  - Redux offers easy debugging
+  - Redux - A Predictable State Container for JS Apps
+  - 2 libraries - React-Redux, Redux-toolkit
