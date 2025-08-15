@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import UserContext from '../utils/UserContext.js';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
     const [btnName, setBtnName] = useState("Login");
@@ -10,12 +11,16 @@ const Header = () => {
 
     const { loggedInUser } = useContext(UserContext);
 
-    console.log(btnName);
-    console.log("Header rendered");
+    // console.log(btnName);
+    // console.log("Header rendered");
 
     useEffect(() => {
-        console.log("useEffect in header called");
+        // console.log("useEffect in header called");
     }, [btnName]);
+
+    // Here, we are subscribing to the store using a Selector
+    const cardItems = useSelector((store) => store.cart.items);
+    // console.log(cardItems);
 
     return (
         <div className="flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-green-50">
@@ -40,8 +45,8 @@ const Header = () => {
                     <li className='px-4'>
                         <Link to="/grocery">Grocery</Link>
                     </li>
-                    <li className='px-4'>
-                        Cart
+                    <li className='px-4 font-bold text-xl'>
+                        Cart - {cardItems.length} items
                     </li>
                     <button className="login" 
                         onClick={() =>{

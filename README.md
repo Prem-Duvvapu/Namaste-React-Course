@@ -237,3 +237,14 @@
   - Redux offers easy debugging
   - Redux - A Predictable State Container for JS Apps
   - 2 libraries - React-Redux, Redux-toolkit
+  - Redux store is one big object. 
+  - We can create separate slices in the Redux store.
+  - Write data to redux store - clicked button -> Dispatches an action -> calls a function(reducer) -> this reducer function internally updates the slice of the redux store.
+  - Read data from redux store - through Selector. This is known as subscribing to the store.
+  - install @reduxjs/toolkit and react-redux.
+  - Build our store.
+  - Connect our store to our app.
+  - Slice (cartSlice)
+  - dispath (action)
+  - Selector
+  - createSlice(), configureStore(), useSelector(), useDispatch()
