@@ -248,3 +248,7 @@
   - dispath (action)
   - Selector
   - createSlice(), configureStore(), useSelector(), useDispatch()
+  - Subscribe to only the required part of the store. If you subscribe to the whole store it will still work but result in bad performance.
+  - immerjs
+  - redux devtools chrome extension
+  - RTK query
