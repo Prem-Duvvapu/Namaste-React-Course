@@ -252,3 +252,20 @@
   - immerjs
   - redux devtools chrome extension
   - RTK query
+
+## 13. Time for Test
+  - Unit Testing
+  - Integration Testing
+  - End to End Testing - e2e testing
+  - DOM Testing Library
+  - React Testing Libray - built on top of DOM Testing Library, uses JEST(install this)
+  - __someText__ -> This is known as dunder
+
+  1. Setting up testing in our app
+    - install react testing library
+    - install jest
+    - install babel dependencies mentioned in jest
+    - Configure babel (bable.config.js)
+    - Configure parcel config file to disable default babel transpilation (.parcelrc)
+    - npx create-jest@latest (command)
+    - npm install --save-dev jest-environment-jsdom (command)
