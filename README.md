@@ -269,3 +269,9 @@
     - Configure parcel config file to disable default babel transpilation (.parcelrc)
     - npx create-jest@latest (command)
     - npm install --save-dev jest-environment-jsdom (command)
+    - npm i -D @babel/preset-react (command to make JSX work in test cases)
+    - include @babel/preset-react inside my babel.config.js
+
+  2. Writing test code
+    - render(component)
+    - screen.get()
