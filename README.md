@@ -271,7 +271,13 @@
     - npm install --save-dev jest-environment-jsdom (command)
     - npm i -D @babel/preset-react (command to make JSX work in test cases)
     - include @babel/preset-react inside my babel.config.js
+    - npm i -D @testing-library/jest-dom (command)
 
   2. Writing test code
     - render(component)
     - screen.get()
+    - getByRole()
+    - getByText()
+    - getByPlaceholderText()
+    - getAllByRole()
+    - describe(), it()/test()
